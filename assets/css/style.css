@@ -1,0 +1,154 @@
+.custom-nav .navbar-nav {
+    padding-top: 15px;
+}
+
+
+.custom-nav .navbar-nav .nav-link.active {
+    color: #2b96dd;
+    font-weight: 600;
+}
+
+.custom-shape-divider-top-1666908157 {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1666908157 svg {
+    width: calc(100% + 1.3px);
+    height: 28px;
+}
+
+.custom-shape-divider-top-1666908157 .shape-fill {
+    fill: #f8f9fa;
+}
+
+#parallax {
+    width: 100%;
+    height: 500px;
+    background-color: #2b96dd;
+    background-image: url(/assets/img/parallax/parallax-3.png), url(/assets/img/parallax/parallax-2.png), url(/assets/img/parallax/parallax-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+}
+
+.custom-shape-divider-top-1666913656 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1666913656 svg {
+    width: calc(125% + 1.3px);
+    height: 56px;
+}
+
+.custom-shape-divider-top-1666913656 .shape-fill {
+    fill: #161342;
+}
+
+.section {
+    position: relative;
+    height: 180px;
+    width: 100%;
+}
+
+.section::before {
+    animation: bounce 1s ease infinite;
+    bottom: 2rem;
+    color: #161342;
+    content: '╲╱';
+    font-size: 2rem;
+    height: 4rem;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 4rem;
+    margin-left: -3rem;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-50%);
+    }
+}
+
+.container-divider {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.container-divider svg {
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.container-divider .shape-fill {
+    fill: #f8f9fa;
+}
+
+#parallax404 {
+    height: 1080px;
+    background-color: #2b96dd;
+    background-image: url(/assets/img/parallax404/1.png), url(/assets/img/parallax404/2.png), url(/assets/img/parallax404/3.png), url(/assets/img/parallax404/4.png), url(/assets/img/parallax404/5.png), url(/assets/img/parallax404/6.png);background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 20%;
+}
+
+.dropdown-toggle {
+    transition: 0.3s;
+}
+
+.social-icon {
+    color: #202020;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #2b96dd;
+}
+
+.social {
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    padding: 5% 0;
+    color: white;
+    transition: 0.3s;
+}
+
+.social:hover {
+    opacity: 0.75;
+}
+ 
+#cv {
+    text-align: center;
+    display: block;
+    padding: 5px 0;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #2b96dd;
+    color: white;
+    text-decoration:none;
+    transition: 0.3s;
+}
+
+#cv:hover {
+    opacity: 0.75;
+}
+
+.border-focus .form-control:focus {
+    border: 1px solid #2b96dd;
+    box-shadow: 0 0 0 0.2rem #2b96dd;
+}
