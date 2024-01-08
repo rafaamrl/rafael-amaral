@@ -4,18 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Rafael Amaral</title>
+    <title>Amaral</title>
     <!-- FAVICON -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <!-- STYLESHEETS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
-    <lottie-player src="assets/img/animation.json" background="#FFFFFF" speed="1" style="width: 1000px; height: 1000px;" direction=1 mode=normal loop autoplay></lottie-player>
-  </body>
+    <!-- MAIN -->
+    <div id="parallax404"></div>
+    <!-- MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg m-1 social-icon"
+            href="https://www.instagram.com/rafa.amrl/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg m-1 social-icon"
+            href="https://x.com/rafa_amrl"
+            role="button"
+            data-mdb-ripple-color="dark"
+            target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <!-- Behance -->
+          <a
+            class="btn btn-link btn-floating btn-lg m-1 social-icon"
+            href="https://www.linkedin.com/in/rafael-amaral-840b0720a/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Copyright © 2022 
+        <a class="text-dark" href="https://rafaelamaral.pt/" style="text-decoration: none;"><b>Amaral</b></a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- SCRIPTS -->
+    <script>
+      (function() {
+          // Add event listener
+          document.addEventListener("mousemove", parallax404);
+          const elem = document.querySelector("#parallax404");
+
+          // Parallax Effect
+          function parallax404(e) {
+              let _w = window.innerWidth/2;
+              let _h = window.innerHeight/2;
+              let _mouseX = e.clientX;
+              let _mouseY = e.clientY;
+              let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${20 - (_mouseY - _h) * 0.001}%`;
+              let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${20 - (_mouseY - _h) * 0.002}%`;
+              let _depth3 = `${50 - (_mouseX - _w) * 0.04}% ${20 - (_mouseY - _h) * 0.004}%`;
+              let _depth4 = `${50 - (_mouseX - _w) * 0.06}% ${20 - (_mouseY - _h) * 0.006}%`;
+              let _depth5 = `${50 - (_mouseX - _w) * 0.08}% ${20 - (_mouseY - _h) * 0.008}%`;
+              let _depth6 = `${50 - (_mouseX - _w) * 0.10}% ${20 - (_mouseY - _h) * 0.010}%`;
+              let x = `${_depth6}, ${_depth5}, ${_depth4}, ${_depth3}, ${_depth2}, ${_depth1}`;
+              elem.style.backgroundPosition = x;
+          }
+      })();
+    </script>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://kit.fontawesome.com/ebde17eb20.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.2/dist/lottie-player.js"></script>
+  </body>
 </html>
